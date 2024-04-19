@@ -1,0 +1,57 @@
+.mobile-navbar-btn{
+    display: none;
+    .close-outline{
+        display: none;  
+    }
+}
+mobile-navbar-btn[name="close-outline"]{
+    display: none; 
+}
+@media(max-width: 768px){
+    .mobile-navbar-btn{
+        display: inline-block;
+        z-index: 99999;
+        .mobile-nav-icon{
+            font-size: 4.2rem;
+            color: black;
+        }
+    } 
+    .navbarlist{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    transform: translateX(100%);
+    visibility:hidden;
+    opacity: 0;
+    .navbarL{
+   font-size: 3rem;
+    }
+    }
+    .active .mobile-nav-icon{
+        display: none;
+        font-size: 3rem;
+        position: absolute;
+        top: 7%;
+        right: 10%;
+        color: black;
+        z-index: 9999;
+    }
+    .active .close-outline{
+        display: inline-block;
+
+    }
+    .active .navbarlist{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 9999;
+    }
+
+}

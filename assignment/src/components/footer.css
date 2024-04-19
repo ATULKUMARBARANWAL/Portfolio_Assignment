@@ -1,0 +1,48 @@
+.foote {
+     
+    max-width: 90%;
+    transform: translateY(70%);
+
+}
+.footer-about {
+    left: 0;
+} 
+@media(max-width:968px)
+{
+    .foot{
+        margin-left: 25%;
+    }
+}
+
+.footer-about{max-width: 90%;}
+@media(min-width:968px) {
+    .footer-about{
+    max-width: 25%;}
+    .foot{
+        max-width: 80%;  
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        justify-content: space-around;
+    }
+    .foote {
+        gap: 10px; 
+        max-width: 90%;
+        transform: translateY(70%);
+    
+    }
+    .icon-footer{
+        margin-right: 4px;
+    }
+    
+}
+.foot{
+    max-width: 80%;  
+    display: flex;
+   
+}
+input[type="submit"]
+{
+    width: 8rem;
+
+}
